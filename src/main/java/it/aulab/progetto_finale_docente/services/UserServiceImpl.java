@@ -87,4 +87,9 @@ public class UserServiceImpl implements UserService {
 
         authenticateUserAndSetSession(user, userDto, request);
     }
+
+    @Override
+    public User find(Long id){
+        return userRepository.findById(id).get();
+    }
 }
