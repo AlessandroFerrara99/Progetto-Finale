@@ -12,9 +12,14 @@ xmlns:th="http://www.thymeleaf.org"
                 Not authorized!
             </div>
         </div>
-        <div th:if="${successMwssage}">
+        <div th:if="${successMessage}">
             <div class="alert alert-success">
                 <p th:text="${successMessage}"></p>
+            </div>
+        </div>
+        <div th:if="${errorMessage}">
+            <div class="alert alert-success">
+                <p th:text="${errorMessage}"></p>
             </div>
         </div>
         <div class="container-fluid">
